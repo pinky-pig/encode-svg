@@ -1,9 +1,9 @@
 // https://yoksel.github.io/url-encoder/
 
-export function getResults(initTextarea: string) {
+export function getResults(initTextarea: string, externalQuotesValue = 'double') {
   const namespaced = addNameSpace(initTextarea)
-  const escaped = encodeSVG(namespaced)
-  const quotes = getQuotes()
+  const escaped = encodeSVG(namespaced, externalQuotesValue)
+  const quotes = getQuotes(externalQuotesValue)
 
   const resultCss = `background-image: url(${quotes.level1}data:image/svg+xml,${escaped}${quotes.level1});`
 

@@ -1,6 +1,6 @@
 <template>
   <Suspense>
-    <main class="main fixed bottom-0 left-0 right-0 top-0 h-full w-full bg-[#18202b]">
+    <main class="main fixed bottom-0 left-0 right-0 top-0 h-full w-full bg-[#212132]">
       <RouterView />
     </main>
   </Suspense>
@@ -8,15 +8,15 @@
 
 <style scoped>
 .main::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/noise.png');
+  /* background-image: url('/noise.png'); */
   background-repeat: repeat;
-  opacity: .04;
+  opacity: 0.04;
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;

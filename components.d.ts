@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Alert: typeof import('./src/components/ui/Alert.vue')['default']
     Background: typeof import('./src/components/ui/Background.vue')['default']
+    Card: typeof import('./src/components/ui/Card.vue')['default']
     Code: typeof import('./src/components/layout/Code.vue')['default']
     ColorPicker: typeof import('./src/components/ui/ColorPicker.vue')['default']
     ConfettiCanvas: typeof import('./src/components/ui/ConfettiCanvas.vue')['default']

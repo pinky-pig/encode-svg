@@ -22,8 +22,11 @@ const { width } = useWindowSize()
         src="/favicon.svg"
         alt=""
       >
-      <span class="cursor-default text-[24px] font-bold tracking-[2px] text-[#a4b2c1]">
-        Encode SVG
+      <span class="cursor-default text-[24px] font-bold tracking-[2px] text-[#ffdd65]">
+        <span class="text-[#7e41ff]">
+          Encode
+        </span>
+        SVG
       </span>
     </div>
 
