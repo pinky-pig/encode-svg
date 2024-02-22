@@ -25,10 +25,14 @@ function addNameSpace(data: string) {
 function encodeSVG(data: string, externalQuotesValue = 'double') {
   const symbols = /[\r\n%#()<>?[\\\]^`{|}]/g
 
-  if (externalQuotesValue === 'double')
-    data = data.replace(/"/g, '\'')
-  else
+  if (externalQuotesValue === 'double') {
     data = data.replace(/'/g, '"')
+    data = data.replace(/"/g, '\'')
+  }
+  else {
+    data = data.replace(/"/g, '\'')
+    data = data.replace(/'/g, '"')
+  }
 
   data = data.replace(/>\s{1,}</g, '><')
   data = data.replace(/\s{2,}/g, ' ')

@@ -43,3 +43,10 @@ html{
 ::-webkit-scrollbar-corner{
   display:none;
 }
+
+/* 文字选中颜色 */
+::selection {
+  background-color: #7e41ff;
+  color: #ffffff;
+  text-shadow: none;
+}

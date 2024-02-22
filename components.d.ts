@@ -28,6 +28,8 @@ declare module 'vue' {
     RangeBar: typeof import('./src/components/ui/RangeBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Sticker: typeof import('./src/components/ui/Sticker.vue')['default']
+    StickerArrow: typeof import('./src/components/ui/StickerArrow.vue')['default']
     TextareaCode: typeof import('./src/components/ui/TextareaCode.vue')['default']
     Tools: typeof import('./src/components/layout/Tools.vue')['default']
   }
